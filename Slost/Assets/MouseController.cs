@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour {
     public static Transform currentAttract;
-    public static FootClick currentFoot;
+    public static Claw currentClaw;
 
     Camera main;
 
-    FootClick[] footClicks;
+    Claw[] claws;
 
 	// Use this for initialization
 	void Start () {
         main = Camera.main;
-        footClicks = FindObjectsOfType<FootClick>();
+        claws = FindObjectsOfType<Claw>();
 	}
 	
 	// Update is called once per frame
@@ -26,21 +26,21 @@ public class MouseController : MonoBehaviour {
             Vector2 pos = main.ScreenToWorldPoint((Vector2)Input.mousePosition);
             float shortestDist = float.MaxValue;
             float next;
-            foreach (FootClick footClick in footClicks) {
-                next = Vector2.Distance(pos, footClick.transform.position);
+            foreach (Claw claw in claws) {
+                next = Vector2.Distance(pos, claw.transform.position);
                 if (next < shortestDist) {
                     shortestDist = next;
-                    currentFoot = footClick;
+                    currentClaw = claw;
                 }
             }
-            currentAttract = currentFoot.attractPoint;
-            currentFoot.Click();
+            currentAttract = currentClaw.attractPoint;
+            currentClaw.Click();
         }
 
         if (Input.GetMouseButtonUp(0)) {
             currentAttract = null;
-            currentFoot.Unclick();
-            currentFoot = null;
+            currentClaw.Unclick();
+            currentClaw = null;
         }
 	}
 }

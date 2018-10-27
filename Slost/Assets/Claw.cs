@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FootClick : MonoBehaviour {
+public class Claw : MonoBehaviour {
 
     public FixedJoint2D grip;
     public TreeBit gripPoint;
