@@ -6,11 +6,6 @@ public class LimbLine : MonoBehaviour {
 
     private LineRenderer limbLine;
     public Transform socket;
-    private Rigidbody2D body;
-
-    private Vector3 newLocation;
-    private Vector3 circleCenter;
-    private float circleRadius;
 
     public int lastIndex;
 
@@ -18,17 +13,11 @@ public class LimbLine : MonoBehaviour {
 	void Start () {
         //socket = transform.parent;
         limbLine = GetComponent<LineRenderer>();
-        circleCenter = transform.parent.position;
-        circleRadius = 2f;
-        body = GetComponent<Rigidbody2D>();
-        //transform.position = circleCenter;
-        newLocation = transform.position;
-        //GetComponent<Rigidbody2D>().AddForce(new Vector2(500, 0));
     }
 	
 	// Update is called once per frame
 	void Update () {
-        limbLine.SetPosition(lastIndex, transform.position);
-        limbLine.SetPosition(0, socket.position);
+        limbLine.SetPosition(lastIndex, new Vector3(transform.position.x, transform.position.y, -1));
+        limbLine.SetPosition(0, new Vector3(socket.position.x, socket.position.y, -1));
     }
 }

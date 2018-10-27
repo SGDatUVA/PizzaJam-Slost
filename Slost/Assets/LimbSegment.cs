@@ -9,6 +9,6 @@ public class LimbSegment : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        limbLine.SetPosition(index, transform.position);
+        limbLine.SetPosition(index, new Vector3(transform.position.x, transform.position.y, -1));
 	}
 }
