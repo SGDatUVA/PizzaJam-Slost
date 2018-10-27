@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1976248525093758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5.51, z: 0}
-  m_LocalScale: {x: 2.5, y: 0.3, z: 1}
+  m_LocalScale: {x: 1.9, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,8 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad62dbc6edb67a2479abda691ad1083e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingVelocity: 0.7
-  angularVelocity: 30
+  speedMultiplier: 0.5
+  maxFallingVelocity: 0.9
+  maxAngularVelocity: 25
 --- !u!212 &212501164450891360
 SpriteRenderer:
   m_ObjectHideFlags: 1
