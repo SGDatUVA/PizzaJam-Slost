@@ -11,7 +11,7 @@ public class MouseController : MonoBehaviour {
 
     Camera main;
 
-    List<Claw> claws;
+    static List<Claw> claws;
 
 	// Use this for initialization
 	void Start () {
@@ -21,29 +21,49 @@ public class MouseController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButton(0) && currentAttract) {
+        if (Input.GetMouseButton(0) && currentAttract && currentClaw) {
             currentAttract.transform.position = main.ScreenToWorldPoint((Vector2)Input.mousePosition);
         }
 
         if (Input.GetMouseButtonDown(0)) {
+            currentClaw = null;
             Vector2 pos = main.ScreenToWorldPoint((Vector2)Input.mousePosition);
             float shortestDist = float.MaxValue;
             float next;
             foreach (Claw claw in claws) {
-                next = Vector2.Distance(pos, claw.transform.position);
-                if (next < shortestDist) {
-                    shortestDist = next;
-                    currentClaw = claw;
+                if (!claw.stunned) {
+                    next = Vector2.Distance(pos, claw.transform.position);
+                    if (next < shortestDist) {
+                        shortestDist = next;
+                        currentClaw = claw;
+                    }
                 }
             }
-            currentAttract = currentClaw.attractPoint;
-            currentClaw.Click();
+            if (currentClaw) {
+                currentAttract = currentClaw.attractPoint;
+                currentClaw.Click();
+            }
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            currentAttract = null;
-            currentClaw.Unclick();
-            currentClaw = null;
+            if (currentClaw) {
+                currentAttract = null;
+                currentClaw.Unclick();
+                currentClaw = null;
+            }
         }
 	}
+
+    public static void RemoveGrip() {
+        gripNum--;
+        if (gripNum <= 1) {
+            foreach (Claw claw in claws) {
+                claw.Stun();
+            }
+        }
+    }
+
+    public static void AddGrip() {
+        gripNum++;
+    }
 }

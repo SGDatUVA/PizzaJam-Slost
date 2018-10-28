@@ -9,6 +9,7 @@ public class Claw : MonoBehaviour {
 
     public Transform attractPoint;
     SpringJoint2D spring;
+    public bool stunned = false;
 
     bool start = true;
 
@@ -21,7 +22,7 @@ public class Claw : MonoBehaviour {
         grip.connectedBody = gripPoint.GetComponent<Rigidbody2D>();
         spring = GetComponent<SpringJoint2D>();
         grip.enabled = true;
-        Body.AddGrip();
+        MouseController.AddGrip();
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
@@ -45,7 +46,7 @@ public class Claw : MonoBehaviour {
             grip.connectedBody = null;
             grip.enabled = false;
             spring.enabled = true;
-            Body.RemoveGrip();
+            MouseController.RemoveGrip();
         }
     }
 
@@ -55,11 +56,18 @@ public class Claw : MonoBehaviour {
             grip.connectedBody = gripPoint.GetComponent<Rigidbody2D>();
             grip.connectedAnchor = transform.position;
             spring.enabled = false;
-            Body.AddGrip();
+            MouseController.AddGrip();
         }
     }
 
-    public void Flail() {
-        transform.Translate(Vector3.up);
+    public void Stun() {
+        Click();
+        spring.enabled = false;
+        stunned = true;
+    }
+
+    public void Unstun() {
+        spring.enabled = true;
+        stunned = false;
     }
 }

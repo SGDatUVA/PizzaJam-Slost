@@ -19,10 +19,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4111045130660116}
-  - component: {fileID: 114600861906858854}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +40,7 @@ GameObject:
   - component: {fileID: 61857178003665364}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +59,7 @@ GameObject:
   - component: {fileID: 61567475443473046}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +74,7 @@ GameObject:
   - component: {fileID: 4725445989655082}
   m_Layer: 0
   m_Name: Sloth
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +93,7 @@ GameObject:
   - component: {fileID: 61148306761704248}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +128,7 @@ GameObject:
   - component: {fileID: 61287979595314036}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +147,7 @@ GameObject:
   - component: {fileID: 114583532558311070}
   m_Layer: 0
   m_Name: Body Segment 2
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,7 +166,7 @@ GameObject:
   - component: {fileID: 61859407754412812}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,7 +185,7 @@ GameObject:
   - component: {fileID: 61220398640558802}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +204,7 @@ GameObject:
   - component: {fileID: 61721982196511176}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +223,7 @@ GameObject:
   - component: {fileID: 61076869881287828}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,7 +243,7 @@ GameObject:
   - component: {fileID: 114238224506187878}
   m_Layer: 0
   m_Name: Neck Segment 1
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +262,7 @@ GameObject:
   - component: {fileID: 61479756051223602}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -298,7 +297,7 @@ GameObject:
   - component: {fileID: 61296749876920538}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -321,7 +320,7 @@ GameObject:
   - component: {fileID: 255822432814303740}
   m_Layer: 0
   m_Name: Hand 1
-  m_TagString: Claw
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,7 +335,7 @@ GameObject:
   - component: {fileID: 4083098664835170}
   m_Layer: 0
   m_Name: Upper Leg 2
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,7 +355,7 @@ GameObject:
   - component: {fileID: 61539420995897594}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,7 +394,7 @@ GameObject:
   - component: {fileID: 255276477571473694}
   m_Layer: 0
   m_Name: Hand 2
-  m_TagString: Claw
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +429,7 @@ GameObject:
   - component: {fileID: 61822729858543442}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -449,7 +448,7 @@ GameObject:
   - component: {fileID: 114494470727896828}
   m_Layer: 0
   m_Name: Elbow
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +467,7 @@ GameObject:
   - component: {fileID: 61222696776022572}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,7 +486,7 @@ GameObject:
   - component: {fileID: 61214134565454338}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -506,7 +505,7 @@ GameObject:
   - component: {fileID: 61728178909423912}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -526,7 +525,7 @@ GameObject:
   - component: {fileID: 61938846358380534}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -545,7 +544,7 @@ GameObject:
   - component: {fileID: 114326005045446590}
   m_Layer: 0
   m_Name: Elbow
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +563,7 @@ GameObject:
   - component: {fileID: 255137435120422040}
   m_Layer: 0
   m_Name: Neck Segment 3
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +586,7 @@ GameObject:
   - component: {fileID: 255798862058641322}
   m_Layer: 0
   m_Name: Foot 1
-  m_TagString: Claw
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -606,7 +605,7 @@ GameObject:
   - component: {fileID: 61520479207023458}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -626,7 +625,7 @@ GameObject:
   - component: {fileID: 61243134185235208}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -643,7 +642,7 @@ GameObject:
   - component: {fileID: 8123674485820503860}
   m_Layer: 0
   m_Name: HeadSprite
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -678,7 +677,7 @@ GameObject:
   - component: {fileID: 61546113036038824}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -697,7 +696,7 @@ GameObject:
   - component: {fileID: 114103668834886946}
   m_Layer: 0
   m_Name: Neck Segment 2
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -712,7 +711,7 @@ GameObject:
   - component: {fileID: 4339741043848452}
   m_Layer: 0
   m_Name: Upper Arm 1
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -731,7 +730,7 @@ GameObject:
   - component: {fileID: 61238812973136024}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,7 +749,7 @@ GameObject:
   - component: {fileID: 114175190768712336}
   m_Layer: 0
   m_Name: Body Segment 1 (Main)
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -769,7 +768,7 @@ GameObject:
   - component: {fileID: 61533374804634062}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -784,7 +783,7 @@ GameObject:
   - component: {fileID: 4380462049577772}
   m_Layer: 0
   m_Name: Neck
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -803,7 +802,7 @@ GameObject:
   - component: {fileID: 61234333484711446}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -818,7 +817,7 @@ GameObject:
   - component: {fileID: 4338483113437482}
   m_Layer: 0
   m_Name: Upper Arm 2
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -838,7 +837,7 @@ GameObject:
   - component: {fileID: 255992126643486264}
   m_Layer: 0
   m_Name: Body Segment 3
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,7 +856,7 @@ GameObject:
   - component: {fileID: 114062435279696826}
   m_Layer: 0
   m_Name: Elbow
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -876,7 +875,7 @@ GameObject:
   - component: {fileID: 61458644026882832}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -895,7 +894,7 @@ GameObject:
   - component: {fileID: 114827177172797606}
   m_Layer: 0
   m_Name: Elbow
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -915,7 +914,7 @@ GameObject:
   - component: {fileID: 61229970555043866}
   m_Layer: 0
   m_Name: Arm Segment
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -930,7 +929,7 @@ GameObject:
   - component: {fileID: 4337205081089782}
   m_Layer: 0
   m_Name: Upper Leg 1
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -953,7 +952,7 @@ GameObject:
   - component: {fileID: 255433131077125714}
   m_Layer: 0
   m_Name: Foot 1
-  m_TagString: Claw
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -974,7 +973,7 @@ GameObject:
   - component: {fileID: 58722186338419642}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Sloth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3590,6 +3589,7 @@ MonoBehaviour:
   grip: {fileID: 255276477571473694}
   gripPoint: {fileID: 0}
   attractPoint: {fileID: 4786136702846586}
+  stunned: 0
 --- !u!114 &114103668834886946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3721,6 +3721,7 @@ MonoBehaviour:
   grip: {fileID: 255798862058641322}
   gripPoint: {fileID: 0}
   attractPoint: {fileID: 4127975299134876}
+  stunned: 0
 --- !u!114 &114269886053375130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3865,6 +3866,7 @@ MonoBehaviour:
   grip: {fileID: 255822432814303740}
   gripPoint: {fileID: 0}
   attractPoint: {fileID: 4523614002583004}
+  stunned: 0
 --- !u!114 &114583532558311070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3878,18 +3880,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limbLine: {fileID: 120915494797720238}
   index: 2
---- !u!114 &114600861906858854
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1001746059125246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ba1994569ae9334597e48064cbd134c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallThreshold: 1
 --- !u!114 &114619047345235854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3943,6 +3933,7 @@ MonoBehaviour:
   grip: {fileID: 255433131077125714}
   gripPoint: {fileID: 0}
   attractPoint: {fileID: 4635039446528538}
+  stunned: 0
 --- !u!114 &114725533499596322
 MonoBehaviour:
   m_ObjectHideFlags: 1
