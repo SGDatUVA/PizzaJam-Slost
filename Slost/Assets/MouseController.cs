@@ -5,15 +5,18 @@ using UnityEngine;
 public class MouseController : MonoBehaviour {
     public static Transform currentAttract;
     public static Claw currentClaw;
+    public static int gripNum = 0;
+
+    public static bool living = true;
 
     Camera main;
 
-    Claw[] claws;
+    List<Claw> claws;
 
 	// Use this for initialization
 	void Start () {
         main = Camera.main;
-        claws = FindObjectsOfType<Claw>();
+        claws = new List<Claw>(FindObjectsOfType<Claw>());
 	}
 	
 	// Update is called once per frame

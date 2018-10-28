@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TreeBit
   - Claw
+  - Ground
   layers:
   - Default
   - TransparentFX
