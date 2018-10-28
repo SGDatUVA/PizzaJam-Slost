@@ -96,6 +96,7 @@ public class MouseController : MonoBehaviour {
             claw.Stun();
         }
 
+        GetComponent<AudioSource>().Play();
         dead = true;
         ShitTimer.timer.StopTimer();
     }
