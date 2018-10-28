@@ -107,6 +107,6 @@ public class MouseController : MonoBehaviour {
 
     public void Win() {
         ShitTimer.timer.StopTimer();
-        //Trigger credit scene
+        RestartManager.r.Credits();
     }
 }

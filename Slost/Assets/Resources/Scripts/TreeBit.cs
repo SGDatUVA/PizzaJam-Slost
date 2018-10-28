@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeBit : MonoBehaviour {
 
-    float maxHealth = 200f;
+    public float maxHealth = 200f;
     float health;
     SpriteRenderer sprite;
     Transform image;

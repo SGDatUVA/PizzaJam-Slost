@@ -13,6 +13,8 @@ public class ShitTimer : MonoBehaviour {
     float progress;
     float maxProgress = 60f;
 
+    public Image fadeBox;
+
     private void Start() {
         progress = maxProgress;
         timer = this;
@@ -41,5 +43,16 @@ public class ShitTimer : MonoBehaviour {
     public void StartTimer() {
         start = true;
         gameObject.SetActive(true);
+    }
+
+    public void Fade() {
+        StartCoroutine(fade());
+    }
+
+    IEnumerator fade() {
+        while (fadeBox.color != Color.white) {
+            fadeBox.color = Color.Lerp(fadeBox.color, Color.white, Time.deltaTime * 0.5f);
+            yield return null;
+        }
     }
 }

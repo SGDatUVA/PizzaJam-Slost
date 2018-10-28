@@ -18,6 +18,7 @@ public class Obstacle : MonoBehaviour {
             if (hitEvent != null) {
                 hitEvent();
             }
+            rb.gravityScale = 1;
             rb.AddForce(collision.contacts[0].normal * 500);
         }
     }
