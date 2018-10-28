@@ -9,13 +9,17 @@ public class MouseController : MonoBehaviour {
     public Claw currentClaw;
     public int gripNum = 0;
 
-    public static bool living = true;
+    public bool living = true;
 
     Camera main;
 
     static List<Claw> claws;
 
-    bool stunned = false;
+    public bool stunned = false;
+
+    public bool endGame = false;
+
+    public bool dead = false;
 
 	// Use this for initialization
 	void Start () {
@@ -81,5 +85,28 @@ public class MouseController : MonoBehaviour {
             claw.Unstun();
         }
         stunned = false;
+    }
+
+    public void Shit() {
+        Shitter.shitter.Shit();
+    }
+
+    public void Die() {
+        foreach (Claw claw in claws) {
+            claw.Stun();
+        }
+
+        dead = true;
+        ShitTimer.timer.StopTimer();
+    }
+
+    public void TriggerEnd() {
+        endGame = true;
+        ShitTimer.timer.StartTimer();
+    }
+
+    public void Win() {
+        ShitTimer.timer.StopTimer();
+        //Trigger credit scene
     }
 }

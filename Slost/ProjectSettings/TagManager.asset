@@ -52,6 +52,9 @@ TagManager:
   - name: TreeBits
     uniqueID: 1478440319
     locked: 0
+  - name: Obstacles
+    uniqueID: 2728723609
+    locked: 0
   - name: Sloth
     uniqueID: 2210603331
     locked: 0

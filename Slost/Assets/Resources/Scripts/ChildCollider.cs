@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void HitEvent();
+public delegate void HitEvent(float timer);
 
 public class ChildCollider : MonoBehaviour {
 
@@ -12,7 +12,7 @@ public class ChildCollider : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.collider.CompareTag("Obstacle")) {
             if (hitEvent != null) {
-                hitEvent();
+                hitEvent(2);
             }
         }
     }

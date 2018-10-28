@@ -51,3 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3584948f212aab14c8c974b289233320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentAttract: {fileID: 0}
+  currentClaw: {fileID: 0}
+  gripNum: 0

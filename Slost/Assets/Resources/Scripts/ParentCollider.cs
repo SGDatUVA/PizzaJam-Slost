@@ -25,7 +25,7 @@ public class ParentCollider : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (stunTimer > 0) {
-            stunTimer += Time.deltaTime;
+            stunTimer -= Time.deltaTime;
         }
         else if (stunned && claw.stunned) {
             claw.Unstun();
@@ -33,12 +33,12 @@ public class ParentCollider : MonoBehaviour {
         }
 	}
 
-    private void Collide() {
+    public void Collide(float timer = 2f) {
         if (stunTimer < stunThreshold) {
             if (claw != stunned) {
                 claw.Stun();
             }
-            stunTimer = maxStunTimer;
+            stunTimer = timer;
             stunned = true;
         }
     }
