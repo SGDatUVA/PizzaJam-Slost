@@ -22,7 +22,7 @@ public class Claw : MonoBehaviour {
         grip.connectedBody = gripPoint.GetComponent<Rigidbody2D>();
         spring = GetComponent<SpringJoint2D>();
         grip.enabled = true;
-        MouseController.AddGrip();
+        MouseController.controller.AddGrip();
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
@@ -46,7 +46,7 @@ public class Claw : MonoBehaviour {
             grip.connectedBody = null;
             grip.enabled = false;
             spring.enabled = true;
-            MouseController.RemoveGrip();
+            MouseController.controller.RemoveGrip();
         }
     }
 
@@ -56,7 +56,7 @@ public class Claw : MonoBehaviour {
             grip.connectedBody = gripPoint.GetComponent<Rigidbody2D>();
             grip.connectedAnchor = transform.position;
             spring.enabled = false;
-            MouseController.AddGrip();
+            MouseController.controller.AddGrip();
         }
     }
 

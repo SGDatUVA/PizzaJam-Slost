@@ -27,7 +27,7 @@ public class ParentCollider : MonoBehaviour {
         if (stunTimer > 0) {
             stunTimer += Time.deltaTime;
         }
-        else if (stunned == true) {
+        else if (stunned && claw.stunned) {
             claw.Unstun();
             stunned = false;
         }
@@ -35,7 +35,9 @@ public class ParentCollider : MonoBehaviour {
 
     private void Collide() {
         if (stunTimer < stunThreshold) {
-            claw.Stun();
+            if (claw != stunned) {
+                claw.Stun();
+            }
             stunTimer = maxStunTimer;
             stunned = true;
         }

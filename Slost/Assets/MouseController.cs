@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseController : MonoBehaviour {
-    public static Transform currentAttract;
-    public static Claw currentClaw;
-    public static int gripNum = 0;
+    public static MouseController controller;
+
+    public Transform currentAttract;
+    public Claw currentClaw;
+    public int gripNum = 0;
 
     public static bool living = true;
 
@@ -13,8 +15,11 @@ public class MouseController : MonoBehaviour {
 
     static List<Claw> claws;
 
+    bool stunned = false;
+
 	// Use this for initialization
 	void Start () {
+        controller = this;
         main = Camera.main;
         claws = new List<Claw>(FindObjectsOfType<Claw>());
 	}
@@ -45,7 +50,7 @@ public class MouseController : MonoBehaviour {
             }
         }
 
-        if (Input.GetMouseButtonUp(0)) {
+        if (Input.GetMouseButtonUp(0) && !stunned) {
             if (currentClaw) {
                 currentAttract = null;
                 currentClaw.Unclick();
@@ -54,16 +59,27 @@ public class MouseController : MonoBehaviour {
         }
 	}
 
-    public static void RemoveGrip() {
+    public void RemoveGrip() {
         gripNum--;
-        if (gripNum <= 1) {
-            foreach (Claw claw in claws) {
-                claw.Stun();
-            }
+        if (gripNum <= 1 && !stunned) {
+            stunned = true;
+            StartCoroutine(Stun());
         }
     }
 
-    public static void AddGrip() {
+    public void AddGrip() {
         gripNum++;
+    }
+
+    IEnumerator Stun() {
+        foreach (Claw claw in claws) {
+            claw.Stun();
+        }
+        yield return new WaitForSeconds(1f);
+
+        foreach (Claw claw in claws) {
+            claw.Unstun();
+        }
+        stunned = false;
     }
 }

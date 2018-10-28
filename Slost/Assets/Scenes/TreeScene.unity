@@ -1777,8 +1777,7 @@ Prefab:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 975874809}
-    m_RemovedComponents:
-    - {fileID: 114600861906858854, guid: a641431c7e060104789aff6dcfb4f498, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a641431c7e060104789aff6dcfb4f498, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &396519884

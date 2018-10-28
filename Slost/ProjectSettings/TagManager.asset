@@ -8,6 +8,7 @@ TagManager:
   - Claw
   - Ground
   - Obstacle
+  - Sloth
   layers:
   - Default
   - TransparentFX
