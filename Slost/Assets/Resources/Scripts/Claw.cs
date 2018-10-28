@@ -9,6 +9,7 @@ public class Claw : MonoBehaviour {
 
     public Transform attractPoint;
     SpringJoint2D spring;
+
     public bool stunned = false;
 
     bool start = true;
@@ -51,7 +52,8 @@ public class Claw : MonoBehaviour {
             gripped = false;
             grip.connectedBody = null;
             grip.enabled = false;
-            spring.enabled = true;
+            if (MouseController.controller.gripNum > 0)
+                spring.enabled = true;
             MouseController.controller.RemoveGrip();
         }
     }
@@ -78,7 +80,10 @@ public class Claw : MonoBehaviour {
     }
 
     public void Unstun() {
-        spring.enabled = true;
-        stunned = false;
+        if (!MouseController.controller.dead) {
+            if (MouseController.controller.gripNum > 0)
+                spring.enabled = true;
+            stunned = false;
+        }
     }
 }

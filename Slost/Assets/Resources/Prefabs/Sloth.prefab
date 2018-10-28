@@ -4992,7 +4992,7 @@ LineRenderer:
     numCornerVertices: 20
     numCapVertices: 20
     alignment: 0
-    textureMode: 2
+    textureMode: 0
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
@@ -5099,7 +5099,7 @@ LineRenderer:
     numCornerVertices: 20
     numCapVertices: 20
     alignment: 0
-    textureMode: 2
+    textureMode: 0
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
@@ -5206,7 +5206,7 @@ LineRenderer:
     numCornerVertices: 20
     numCapVertices: 10
     alignment: 0
-    textureMode: 2
+    textureMode: 0
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
@@ -5409,7 +5409,7 @@ LineRenderer:
     numCornerVertices: 20
     numCapVertices: 10
     alignment: 0
-    textureMode: 2
+    textureMode: 0
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0

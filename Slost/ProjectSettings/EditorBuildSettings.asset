@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TreeScene.unity
     guid: 3e3e3a77f3196c145a0a6cbbc2494af8
+  - enabled: 1
+    path: Assets/Scenes/credits.unity
+    guid: 4a8418d2e19442849a9ec2d2f54a9b62
   m_configObjects: {}
